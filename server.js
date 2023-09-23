@@ -13,7 +13,7 @@ app.use((req, res, next) => {
         'Access-Control-Allow-Headers',
         'Origin, X-Requested-With, Content-Type, Accept, Z-Key'
     ))
-    res.setHeader('Access-Control-Allow-Methods', 'Get,Post, Put, Delete, Options');
+    res.setHeader('Access-Control-Allow-Methods', 'Get, Post, Put, Delete, Options');
     next();
 });
 app.use('/', require('./routes'));
