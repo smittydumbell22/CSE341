@@ -1,7 +1,14 @@
 const router = require('express').Router();
-//const lesson1Controller = require('../controllers/lesson1');
-//routes.get('/', lesson1Controller.cassieRoute);
-//routes.get('/nikki', lesson1Controller.nikkiRoute);
+
+router.use('/', require('./swagger'));
+
+router.get('/', (req, res) => {
+    //#swagger.tags=['Hello World']
+    res.send('Hello World');
+});
+// const lesson1Controller = require('../controllers/lesson1');
+// routes.get('/', lesson1Controller.cassieRoute);
+// routes.get('/nikki', lesson1Controller.nikkiRoute);
 // router.get('/', (req, res) => { res.send('Hello World');});
 router.use('/contacts', require('./contacts'));
 
