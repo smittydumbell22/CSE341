@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Contacts Api",
-    "description": "Contacts Api",
+    "title": "Animals Api",
+    "description": "Animals Api",
     "version": "1.0.0"
   },
   "host": "project1-vxst.onrender.com",
@@ -34,10 +34,10 @@
         }
       }
     },
-    "/contacts/": {
+    "/animals/": {
       "get": {
         "tags": [
-          "Contacts"
+          "Animals"
         ],
         "description": "",
         "produces": [
@@ -51,7 +51,7 @@
       },
       "post": {
         "tags": [
-          "Contacts"
+          "Animals"
         ],
         "description": "",
         "parameters": [
@@ -61,19 +61,19 @@
             "schema": {
               "type": "object",
               "properties": {
-                "firstName": {
+                "species": {
                   "example": "any"
                 },
-                "lastName": {
+                "name": {
                   "example": "any"
                 },
-                "email": {
+                "idNumber": {
                   "example": "any"
                 },
-                "favoriteColor": {
+                "enclosure": {
                   "example": "any"
                 },
-                "birthday": {
+                "age": {
                   "example": "any"
                 }
               }
@@ -90,10 +90,10 @@
         }
       }
     },
-    "/contacts/{id}": {
+    "/animals/{id}": {
       "get": {
         "tags": [
-          "Contacts"
+          "Animals"
         ],
         "description": "",
         "produces": [
@@ -115,7 +115,7 @@
       },
       "put": {
         "tags": [
-          "Contacts"
+          "Animals"
         ],
         "description": "",
         "parameters": [
@@ -131,7 +131,7 @@
             "schema": {
               "type": "object",
               "properties": {
-                "contactname": {
+                "animalname": {
                   "example": "any"
                 },
                 "email": {
@@ -155,7 +155,7 @@
       },
       "delete": {
         "tags": [
-          "Contacts"
+          "Animals"
         ],
         "description": "",
         "parameters": [

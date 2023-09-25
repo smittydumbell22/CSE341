@@ -10,6 +10,6 @@ router.get('/', (req, res) => {
 // routes.get('/', lesson1Controller.cassieRoute);
 // routes.get('/nikki', lesson1Controller.nikkiRoute);
 // router.get('/', (req, res) => { res.send('Hello World');});
-router.use('/contacts', require('./contacts'));
+router.use('/animals', require('./animals'));
 
 module.exports = router;
